@@ -1,0 +1,21 @@
+{
+  "name": "gql",
+  "version": "1.0.0",
+  "description": "trying it",
+  "main": "index.js",
+  "author": "dm",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-boost": "^0.4.9",
+    "apollo-server": "^3.13.0",
+    "axios": "^1.6.7",
+    "graphql": "^16.8.1"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
