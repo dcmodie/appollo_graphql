@@ -13,24 +13,6 @@ const GET_USERS = gql`
   }
 `;
 
-// const GET_USERS = gql`
-//   query {
-//     users {
-//       id
-//       login
-//       avatar_url
-//     }
-//   }
-// `;
-
-// query ExampleQuery   {
-//   users {
-//     id
-//     login
-//     avatar_url
-//   }
-// }
-//@apollo/client at 3.5.10
 const User = ({ user: { login, avatar_url } }) => (
   <div className="Card">
     <div>
@@ -60,3 +42,11 @@ function App() {
 }
 
 export default App;
+
+// query UsersQuery {
+//   users(take: 3, skip: 2, orderBy: { createdAt: 'desc' }) {
+//     id
+//     login
+//     avatar_url
+//   }
+// }
